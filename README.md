@@ -15,11 +15,6 @@
 
 </div>
 
-See,
-
-- [GoDoc](http://godoc.org/github.com/aileron-projects/go-tester)
-- [Usage](#usage)
-
 ## Features
 
 - Assertion
