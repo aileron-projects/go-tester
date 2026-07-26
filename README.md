@@ -4,11 +4,10 @@
 
 <div align="center">
 
+[![GoDoc](https://godoc.org/github.com/aileron-projects/go-tester?status.svg)](http://godoc.org/github.com/aileron-projects/go-tester)
 [![Test](https://github.com/aileron-projects/go-tester/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/aileron-projects/go-tester/actions/workflows/test.yaml?query=branch%3Amain)
-[![Go Report Card](https://goreportcard.com/badge/github.com/aileron-projects/go-tester)](https://goreportcard.com/report/github.com/aileron-projects/go-tester)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](./LICENSE)
 
-[![GoDoc](https://godoc.org/github.com/aileron-projects/go-tester?status.svg)](http://godoc.org/github.com/aileron-projects/go-tester)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/aileron-projects/go-tester)
 [![OpenSourceInsight](https://badgen.net/badge/open%2Fsource%2F/insight/cyan)](https://deps.dev/go/github.com%2Faileron-projects%2Fgo-tester)
 [![OSS Insight](https://badgen.net/badge/OSS/Insight/orange)](https://ossinsight.io/analyze/aileron-projects/go-tester)
