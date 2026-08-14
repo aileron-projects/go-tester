@@ -1,59 +1,41 @@
-# go-tester
-
-**Go library for testing.**
+<!-- markdownlint-disable MD033 MD041 -->
 
 <div align="center">
 
-[![GoDoc](https://godoc.org/github.com/aileron-projects/go-tester?status.svg)](http://godoc.org/github.com/aileron-projects/go-tester)
-[![Test](https://github.com/aileron-projects/go-tester/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/aileron-projects/go-tester/actions/workflows/test.yaml?query=branch%3Amain)
-[![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](./LICENSE)
+[![Release](https://img.shields.io/github/v/release/aileron-projects/go-tester?sort=semver)](https://github.com/aileron-projects/go-tester/releases)
+[![Reference](https://pkg.go.dev/badge/github.com/aileron-projects/go-tester.svg)](https://pkg.go.dev/github.com/aileron-projects/go-tester)
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/aileron-projects/go-tester)
+[![Test](https://github.com/aileron-projects/go-tester/actions/workflows/test.yaml/badge.svg)](https://github.com/aileron-projects/go/actions/workflows/test.yaml)
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/aileron-projects/go-tester)
-[![OpenSourceInsight](https://badgen.net/badge/open%2Fsource%2F/insight/cyan)](https://deps.dev/go/github.com%2Faileron-projects%2Fgo-tester)
-[![OSS Insight](https://badgen.net/badge/OSS/Insight/orange)](https://ossinsight.io/analyze/aileron-projects/go-tester)
+[![Insights](https://badgen.net/badge/Insights/open%2Fsource%2Finsights/cyan)](https://deps.dev/go/github.com%2Faileron-projects%2Fgo-tester)
+[![Insights](https://badgen.net/badge/Insights/OSS%2FInsight/orange)](https://ossinsight.io/analyze/aileron-projects/go-tester)
 
 </div>
+
+# go-tester
+
+**Go library for testing.**
 
 ## Features
 
 - Assertion
 - Global variable replacer (os.Stdout, os.Stderr, rand.Reader, etc)
-- io.Reader and io.Writer that can return errors
+- io.Reader and io.Writer that can throw errors
+- Zero dependency
 
-## Tested Environments
-
-Operating System:
-
-- `Linux`: [ubuntu-latest](https://github.com/actions/runner-images)
-- `Windows`: [windows-latest](https://github.com/actions/runner-images)
-- `macOS`: [macos-latest](https://github.com/actions/runner-images)
-
-Architecture (Using QEMU on linux):
-
-- x86: `amd64`, `386`
-- arm: `arm/v5`, `arm/v6`, `arm/v7`, `arm64`
-- risc: `riscv64`, `loong64`
-- ppc: `ppc64`, `ppc64le`
-- mips: `mips`, `mips64`, `mips64le`, `mipsle`
-- ibm: `s390x`
-
-## Release Cycle
-
-- Releases are made as needed.
-- [Semantic Versioning](https://semver.org/) `vX.Y.Z` is used.
-
-## License
-
-[Apache-2.0](LICENSE)
-
-## Usage
+## Usages
 
 TODO
 
-## Build Tags
+## Docs & Examples
 
-No build tags defined for this library.
+- Documents: <https://pkg.go.dev/github.com/aileron-projects/template>
+- Examples: [example_test.go](./example_test.go)
 
-## Enviromental Variables
+## References
 
-No environmental variables defined for this library.
+- [testing package](https://pkg.go.dev/testing)
+- [stretchr/testify](https://github.com/stretchr/testify)
+- [google/go-cmp](https://github.com/google/go-cmp)
+- [onsi/ginkgo](https://github.com/onsi/ginkgo)
+- [onsi/gomega](https://github.com/onsi/gomega)
