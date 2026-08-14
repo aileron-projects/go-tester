@@ -29,7 +29,7 @@ TODO
 
 ## Docs & Examples
 
-- Documents: <https://pkg.go.dev/github.com/aileron-projects/go-tester>
+- GoDoc: <https://pkg.go.dev/github.com/aileron-projects/go-tester>
 - Examples: [example_test.go](./example_test.go)
 
 ## References
