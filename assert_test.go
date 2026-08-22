@@ -139,3 +139,40 @@ func TestAssertEqualErr(t *testing.T) {
 		}
 	})
 }
+
+func TestAssertPanic(t *testing.T) {
+	t.Cleanup(func() { mocT = nil })
+	t.Run("no panic", func(t *testing.T) {
+		tt := &testT{}
+		mocT = tt
+		r, panicked := AssertPanic(t, func() {})
+		if panicked {
+			t.Error("test should not panic")
+		}
+		if r != nil {
+			t.Error("recovered value should nil")
+		}
+	})
+	t.Run("panic error", func(t *testing.T) {
+		tt := &testT{}
+		mocT = tt
+		r, panicked := AssertPanic(t, func() { panic(io.EOF) })
+		if !panicked {
+			t.Error("test should panic")
+		}
+		if r != io.EOF {
+			t.Error("recovered value not match")
+		}
+	})
+	t.Run("panic string", func(t *testing.T) {
+		tt := &testT{}
+		mocT = tt
+		r, panicked := AssertPanic(t, func() { panic("string") })
+		if !panicked {
+			t.Error("test should panic")
+		}
+		if r != "string" {
+			t.Error("recovered value not match")
+		}
+	})
+}
