@@ -62,3 +62,21 @@ func AssertEqualErr(t *testing.T, want, got error) bool {
 	cmp.Or(mocT, testingT(t)).Error(msg)
 	return false
 }
+
+// AssertPanic asserts that the test function panics.
+// It returns recovered value and true when the test panicked.
+// Note tha
+func AssertPanic(t *testing.T, test func()) (r any, panicked bool) {
+	t.Helper()
+	defer func() {
+		r = recover()
+		if r == nil {
+			cmp.Or(mocT, testingT(t)).Error("expect panick but test was not panicked")
+			panicked = false
+			return
+		}
+		panicked = true
+	}()
+	test()
+	return nil, false
+}
