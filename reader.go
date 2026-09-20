@@ -6,10 +6,8 @@ import (
 	"io"
 )
 
-var (
-	// ErrMaxRead tell that the read bytes reached maximum.
-	ErrMaxRead = errors.New("go-tester/tester: max readable byte reached")
-)
+// ErrMaxRead tell that the read bytes reached maximum.
+var ErrMaxRead = errors.New("go-tester/tester: max readable byte reached")
 
 // MaxSilentReader is the alias for NewMaxReader(r, n, nil).
 func MaxSilentReader(r io.Reader, n int64) *MaxReader {

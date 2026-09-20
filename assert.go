@@ -9,7 +9,7 @@ import (
 	"github.com/davecgh/go-spew/spew"
 )
 
-// TestingT is an interface wrapper around *[testing.T].
+// testingT is an interface wrapper around *[testing.T].
 type testingT interface {
 	Error(...any)
 }
@@ -65,7 +65,6 @@ func AssertEqualErr(t *testing.T, want, got error) bool {
 
 // AssertPanic asserts that the test function panics.
 // It returns recovered value and true when the test panicked.
-// Note tha
 func AssertPanic(t *testing.T, test func()) (r any, panicked bool) {
 	t.Helper()
 	defer func() {
